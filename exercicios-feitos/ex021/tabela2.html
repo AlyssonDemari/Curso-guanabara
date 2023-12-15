@@ -1,3 +1,5 @@
+<!--  Uso de tabelas grandes  -->
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -8,6 +10,7 @@
         table{
             width: 450px;
             border-collapse:collapse ;
+            position: relative; /*  Para o uso do cabeçalho da tabela rolar tem que por positoin relative  */
         }
 
         td, th{
@@ -17,15 +20,33 @@
         }
         th{
             text-shadow: 1px 1px black;
-            background-color: lightgrey;
+            background-color: rgb(255, 0, 0);
             color: white;
         }
+
+        thead > tr > th{  /*  para que a tabela fique com o cabeçalho descendo junto */
+            position: sticky;
+            top: -1px; /*  se por o 0 ele fica com 1 pixel aparecendo */
+            background-color: darkgray;  /*  substitui a cor do que já foi estabelecido em th*/
+        }
+
+        tbody > tr:nth-child(2n){  /*  Serve para adicionar o efeito zebrado
+                                                odd  |  even */  
+            background-color: aquamarine;
+        }
+
+        tbody > tr:nth-child(odd){  /*  é posivel adiconar duas cores diferentes na tabela*/
+            background-color: bisque;
+        }
+
         .num{
             text-align: right;
         }
+
         tfoot td{
-            background-color: lightgrey;
+            background-color: lightgrey; 
         }
+
     </style>
 </head>
 <body>
@@ -83,7 +104,115 @@
                 <td>Santa Catarina</td>
                 <td class="num">7 610 361</td>
             </tr>
-            
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">44 411 238</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">20 538 718	</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">16 054 524</td>
+            </tr>
+            <tr>
+                <td>SBahia</td>
+                <td class="num">14 141 626</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11 444 380</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">10 882 965</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9 058 931</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">8 794 9578</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8 121 025</td>
+            </tr>
+            <tr>
+
+                <td>Santa Catarina</td>
+                <td class="num">7 610 361</td>
+            </tr>
+                <td>São Paulo</td>
+                <td class="num">44 411 238</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">20 538 718	</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">16 054 524</td>
+            </tr>
+            <tr>
+                <td>SBahia</td>
+                <td class="num">14 141 626</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11 444 380</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">10 882 965</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9 058 931</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">8 794 9578</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8 121 025</td>
+            </tr>
+            <tr>
+
+                <td>Santa Catarina</td>
+                <td class="num">7 610 361</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">44 411 238</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">20 538 718	</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">16 054 524</td>
+            </tr>
+            <tr>
+                <td>SBahia</td>
+                <td class="num">14 141 626</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11 444 380</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">10 882 965</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9 058 931</td>
+            </tr>    
         </tbody>
         <tfoot>
             <tr>
