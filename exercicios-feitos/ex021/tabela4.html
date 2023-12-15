@@ -4,8 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas </title>
+    <style>
+        caption{
+            background-color: beige;
+            padding: 10px;
+            border: 1px solid black
+            
+            ;
+        }
+        table{
+            width: 500px;
+            height: 50px;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        td, th{
+            background-color: bisque;
+            padding: 10px;
+            border: 1px solid black;
+        }
+    </style>
 </head>
 <body>
     <h1>Tabela 1</h1>
+    
+    <table>
+        <caption>Filmes Favoritos</caption>
+        <thead>
+            <th scope="col">Grupo</th>
+            <th>Nomes</th>
+            <th scope="col" colspan="3">Filmes</th>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row" rowspan="3">mulhres</th>
+                <td>Ana Maria Santos </td>
+                <td>Aliem</td>
+                <td>Rambo </td>
+                <td>Vingadores</td>
+            </tr>
+            <tr>
+                <td>Beatriz Souza</td>
+                <td>Hulk</td>
+                <td>Inception</td>
+                <td>Batman</td>
+            </tr>
+            <tr>
+                <td>Cláudia Melo</td>
+                <td>Oblivion</td>
+                <td>Matrix</td>
+                <td>Big Hero</td>
+            </tr>
+            <tr>
+                <th scope="row" rowspan="3">Homens</th>
+                <td>Bruno Mendonça</td>
+                <td>Intocáveis</td>
+                <td>Aminésia</td>
+                <td>Gladiador</td>
+            </tr>
+            <tr>
+                <td>Daniel Lourenço </thd>
+                <td>Wall-e</td>
+                <td>Oldboy</td>
+                <td>Dangal</td>
+            </tr>
+            <tr>
+                <td>Fabiano Mota </td>
+                <td>Star Wars 5</td>
+                <td>Taxi Driver</td>
+                <td>Toy Story</td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>
