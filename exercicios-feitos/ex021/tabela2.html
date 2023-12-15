@@ -6,17 +6,17 @@
     <title>Tabela Grande</title>
     <style>
         table{
-
+            width: 450px;
             border-collapse:collapse ;
         }
 
         td, th{
             border: 1px solid black;
-            width: 200px;
             height: 10px;
             padding: 10px;
         }
         th{
+            text-shadow: 1px 1px black;
             background-color: lightgrey;
             color: white;
         }
@@ -30,10 +30,14 @@
 </head>
 <body>
     <table>
+        <caption>  <!--  serve para por uma legenda na tabela-->
+            isso é um caption
+        </caption>
         <thead>
             <tr>
-                <th>Região</th>
-                <th>Habitantes</th>
+            <th scope="col">Estado</th> <!--  scope serve para indentificar onde os dados(<TD>) do título(<TH>) se encontra, uso semantico 
+                COL  |  ROW  -->
+                <th scope="col" style="width: 50px;"  >Habitantes</th>
             </tr>
         </thead>
 
@@ -83,7 +87,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>230.213.346</strong></td><!--  não foi como <th> por causa da semantica  -->
             </tr>
         </tfoot>
