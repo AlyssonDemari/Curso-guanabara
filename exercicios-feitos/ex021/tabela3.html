@@ -1,0 +1,46 @@
+<!--
+    Uso de mesclage, na tabela 
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de mesclagem </title>
+    <style>
+        table{
+            width: 600px;
+            height: 200px;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        td{
+            background-color: aqua;
+            border: 1px solid black;  
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td colspan="2">A</td>  <!--  Para que a celula ocupe duas coluna usar colspan e o número de columas que vc quer ocupar-->
+            <td rowspan="3">C</td>   <!--  Para que a celula ocupe duas linhas usar rowspan e o número de columas que vc quer ocupar-->
+        </tr>
+        <tr>
+            <td>D</td>
+            <td>F</td>
+            
+        </tr>
+        <tr>
+            <td>H</td>
+            <td>I</td>
+            
+        </tr>
+        <tr>
+            
+            <td colspan="3">M</td>
+        </tr>
+    </table>
+</body>
+</html>
