@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabela do desafio 14</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 600px;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        td, th{
+            border: 1px solid black;  
+        }
+        td{
+            text-align: left;
+        }
+
+        th{
+            background-color: blue;
+        }
+        .num{
+            text-align: center;
+        }
+        .media{
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>tabela 1</h1>
+    <table>
+       <tr>
+           <thead>
+            <th>Área</th>
+            <th scope="rowgroup">Disciplina</th>
+            <th scope="rowgroup">Notas</th>
+            <th scope="rowgroup">Média</th>
+       </tr>
+       </thead> 
+       <tbody>
+        <tr>
+            <th scope="colgroup" rowspan="4">Exatas</th>
+            <TD>Matemática</TD>
+            <td class="num">0.0</td>
+            <td class="num">0.0</td>
+        </tr>
+        <tr>
+            <TD>Física</TD>
+            <td class="num">0.0</td>
+            <td class="num">0.0</td>
+        </tr>
+        <tr>
+            <TD>Química</TD>
+            <td class="num">0.0</td>
+            <td class="num">0.0</td>
+        </tr>
+        <tr>
+            <TD>Biologia</TD>
+            <td class="num">0.0</td>
+            <td class="num">0.0</td>
+        </tr>
+        <tr>
+            <th class="media" colspan="3">Média de Exatas</th>
+            <td class="num">0.0</td>
+        </tr>
+        <TR>
+            <th scope="colgroup" rowspan="2">Humanas</th>
+            <td>História</td>
+            <td class="num">0.0</td>
+            <td class="num">0.0</td>
+        </TR>
+        <tr>
+            <td>Geogrfia</td>
+            <td class="num">0.0</td>
+            <td class="num">0.0</td>
+        </tr>
+       </tbody>
+       <tfoot>
+        <tr>
+            <th class="media" colspan="3">Média Humana</th>
+            <td class="num">0.0</td>
+        </tr>
+       </tfoot>
+    </table>
+</body>
+</html>
