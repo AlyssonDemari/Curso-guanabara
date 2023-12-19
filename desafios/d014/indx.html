@@ -20,13 +20,15 @@
             text-align: left;
         }
 
-        th{
-            background-color: blue;
+        thead > tr > th{
+            background-color: gray;
         }
+
         .num{
             text-align: center;
         }
         .media{
+            background-color: gray;
             text-align: left;
         }
     </style>
@@ -34,18 +36,23 @@
 <body>
     <h1>tabela 1</h1>
     <table>
-       <tr>
-           <thead>
-            <th>Área</th>
-            <th scope="rowgroup">Disciplina</th>
-            <th scope="rowgroup">Notas</th>
-            <th scope="rowgroup">Média</th>
-       </tr>
-       </thead> 
+        <thead>
+            <tr>
+                <th rowspan="2" scope="col">Área</th>
+                <th rowspan="2" scope="col">Disciplinas</th>
+                <th colspan="2" scope="colgroup">Notas</th>
+                <th rowspan="2" scope="col">Média</th>
+            </tr>
+            <tr>
+                <th scope="col">Nota 1</th>
+                <th scope="col">Nota 2</th>
+            </tr>
+        </thead>
        <tbody>
         <tr>
             <th scope="colgroup" rowspan="4">Exatas</th>
             <TD>Matemática</TD>
+            <td class="num">0.0</td>
             <td class="num">0.0</td>
             <td class="num">0.0</td>
         </tr>
@@ -53,9 +60,11 @@
             <TD>Física</TD>
             <td class="num">0.0</td>
             <td class="num">0.0</td>
+            <td class="num">0.0</td>
         </tr>
         <tr>
             <TD>Química</TD>
+            <td class="num">0.0</td>
             <td class="num">0.0</td>
             <td class="num">0.0</td>
         </tr>
@@ -63,9 +72,10 @@
             <TD>Biologia</TD>
             <td class="num">0.0</td>
             <td class="num">0.0</td>
+            <td class="num">0.0</td>
         </tr>
-        <tr>
-            <th class="media" colspan="3">Média de Exatas</th>
+        <tr class="media">
+            <th colspan="4">Média de Exatas</th>
             <td class="num">0.0</td>
         </tr>
         <TR>
@@ -73,16 +83,18 @@
             <td>História</td>
             <td class="num">0.0</td>
             <td class="num">0.0</td>
+            <td class="num">0.0</td>
         </TR>
         <tr>
             <td>Geogrfia</td>
             <td class="num">0.0</td>
             <td class="num">0.0</td>
+            <td class="num">0.0</td>
         </tr>
        </tbody>
        <tfoot>
-        <tr>
-            <th class="media" colspan="3">Média Humana</th>
+        <tr class="media">
+            <th colspan="4">Média Humana</th>
             <td class="num">0.0</td>
         </tr>
        </tfoot>
