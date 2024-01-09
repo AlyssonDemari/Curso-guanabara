@@ -1,0 +1,43 @@
+<!--  Como carregar mais de uma página no iframe  -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso do iframe</title>
+    <style>
+        iframe{
+            display: block;
+            margin: auto;
+            width: 95vw;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum suscipit minus neque, fugiat, saepe recusandae quasi cupiditate voluptatibus corporis ipsum quas consequatur sed pariatur labore aperiam, ea deleniti quibusdam doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta voluptate numquam aspernatur vitae impedit dicta vel cum omnis nulla error, magnam molestias nihil animi tenetur aliquid dignissimos aliquam eum odit!</p>
+
+    <ul>
+        <a href="iframe1.html" target="tela">
+            <li> Primeira página</li>
+        </a>
+        <a href="iframe2.html" target="tela">
+            <li> Segunda página</li>
+        </a>
+        <a href="ifeame3.html" target="tela">
+            <li> Terceira página</li>
+        </a>
+    </ul>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero optio ratione ex deserunt quisquam cumque adipisci, sed fugit quis obcaecati exercitationem tenetur similique laborum doloribus aspernatur, accusamus autem odio cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius magnam voluptates alias hic ad, culpa necessitatibus quas facere odio dolorum consequatur? Sequi quidem quod eaque facilis numquam ut omnis iure! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum tenetur animi voluptates in commodi rem nesciunt! Adipisci molestiae nobis sit. Cupiditate, porro eaque atque non laboriosam laudantium quas nam doloribus.</p>
+
+    <iframe src="" name="tela" srcdoc="<h1>Escolha uma das opções acima 
+    </h1> <p>Isso aqui não mais recomendado, mas, funciona</p> <img src='imagens/logo-css.png'></iframe> "> <!--  para usar aspas dentro do srcdoc tem que ser aspas simples ' X '  -->
+        <p>infelizmente seu navegador não é compativel</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, minima excepturi. Suscipit omnis animi quae vel! Iste totam fugiat assumenda cupiditate, velit enim animi, quia voluptate debitis soluta ipsam nemo. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat necessitatibus iste cupiditate eum quo recusandae explicabo quae minima natus itaque molestias at maiores, tenetur, sapiente facilis voluptatibus illum quasi a. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum id nostrum et laboriosam libero illo suscipit. Repudiandae maxime adipisci suscipit dolor earum, atque voluptatum voluptates enim aliquam voluptatem beatae neque!</p>
+</body>
+</html>
