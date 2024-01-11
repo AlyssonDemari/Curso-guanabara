@@ -1,0 +1,44 @@
+h1{
+    color: blue;
+}
+
+p{
+    color: blue;
+}
+
+
+
+@media (min-width: 550px){
+    h1{
+        color: blueviolet;
+    }
+    p{
+        color: blueviolet;
+    }
+}
+
+@media (width: 150px){
+    h1{
+        color: red;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    h1{
+        color: chartreuse;
+    }
+    p{
+        color: chartreuse;
+    }
+}
+
+
+/*  Para quando a largura for maior que o comprimento  */
+@media (orientation: landscape){
+    h1{
+        color: pink;
+    }
+    p{
+        color: pink
+    }
+}
