@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>interação com js</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        div#area{
+            background-color: green;
+            color: white;
+            width: 400px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+
+        input{
+            width: 80px;
+        }
+
+        input[type="submit"]{
+            border: 2px solid red;
+            border-radius: 50px;
+            background-color: blueviolet;
+            padding: 5px;
+        }
+
+    </style>
+</head>
+<body>
+     
+    <H1>Calculando valores</H1> <br>
+    <div>
+        <input type="number" name="number1" id="inumber1"> + 
+        <input type="number" name="number2" id="inumber2"> =
+        <input type="submit" value="Calcular" onclick="somar()"> 
+        <p id="resultado">Resultado</p>
+    </div>
+
+    <script>
+        function somar(){
+            let coleta1 = document.getElementById('inumber1')
+            let coleta2 = document.getElementById('inumber2')
+            let n1 = Number(coleta1.value)
+            let n2 = Number(coleta2.value)
+            let resultado = n1 + n2
+            console.log(resultado)
+
+            let meuNome = document.getElementById('resultado')
+            meuNome.innerHTML = `O resultado de ${n1} + ${n2} é igual a: ${resultado}`
+        }
+    </script>
+</body>
+</html>
