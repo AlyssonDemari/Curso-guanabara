@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bom dia</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            background-color: bisque;
+        }
+
+        section{
+            width: 400px;
+            height: 300px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #circulo{
+            background-color: blanchedalmond;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 2px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body onload="diaSemana()">
+    <header>
+        <h1>Olá</h1>
+    </header>
+    <main>
+        <section>
+            <div>
+                <p id="titulo">Esse texto vai mudar</p>
+            </div>
+            <div id="circulo">
+                <p id="texto"> Esse texto irá mudar</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>
+            @O_meu_pai
+        </p>
+    </footer>
+
+    <script>
+        function diaSemana(){
+            console.log('oi ne')
+            let hora = new Date()
+            let horaAtual =  hora.getHours()
+            let titulo = document.getElementById('titulo')
+            let texto = document.getElementById('texto')
+            let circulo = document.getElementById('circulo')
+
+            if(horaAtual >0 && horaAtual <= 6){
+                titulo.innerHTML = `Agora são ${horaAtual} da madrugada`
+                texto.innerHTML ="Esta tarde, Vai dormir"
+                document.body.style.background = "#2D6C89"
+                circulo.style.background = "#2D6C89"
+            }else if(horaAtual >6 && horaAtual <= 12){
+                titulo.innerHTML = `Agora são ${horaAtual} horas`
+                texto.innerHTML ="Bom Dia, meu querido"
+                document.body.style.background = "#F9D448"
+                circulo.style.background = "#F9D448"
+            }else if(horaAtual >12 && horaAtual <=18){
+                titulo.innerHTML = `Agora são ${horaAtual} horas`
+                texto.innerHTML ="Bom Tarde, meu querido"
+                document.body.style.background = "#FFC18C"
+                circulo.style.background = "#FFC18C"
+            } else if(horaAtual >18 && horaAtual <=23){
+                titulo.innerHTML = `Agora são ${horaAtual} horas`
+                texto.innerHTML = "Boa noite, meu querido"
+                document.body.style.background = "#193D4B"
+                circulo.style.background = "#193D4B"
+            }
+        }
+    </script>
+</body>
+</html>
